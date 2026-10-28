@@ -1,0 +1,12 @@
+# Understand the three cases to delete node
+To delete a node from a Binary Search Tree (BST), we should think three distinct cases: 
+
+## Case 1: The node is a leaf
+The node has no children (no left node and no right node). Simply remove it.
+
+## Case 2: The node has one child
+Replace the node with its only child. After that, simply remove the node.
+
+## Case 3: The node has two children
+Find the smallest key in the right subtree. Copy that key into the node being deleted, then delete the successor from its original position. Because of smallest key, the successor has no left child. It means easy to replace without complex logic. 
+
